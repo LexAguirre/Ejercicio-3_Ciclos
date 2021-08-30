@@ -10,15 +10,40 @@ export default class Cycle{
         let s = 4;
 
         for(let i = 3; i <= this.S; i = i + 2){
-            s = s - this.resolusion(i);
+            s = s - this.calculoEcuacionS(i);
         }
 
         return (`S = ${s}`);
     }
 
-    resolusion(dividendo){
+    calculoEcuacionS(dividendo){
         let formula = 4 / dividendo;
         return formula;
+    }
+
+    ecuacionE(){
+        let e = 1;
+
+        for(let i = 1; i <= this.E; i++){
+            e = e + this.calculoEcuacionE(i);
+        }
+
+        return (`E = ${e}`);
+    }
+
+    calculoEcuacionE(dividendo){
+        let formula = 1/this.factorial(dividendo);
+        return formula
+    }
+
+    factorial(dividendo){
+        let resultado = dividendo;
+
+        for (let i = 1; i < dividendo; i++){
+            resultado = resultado * i;
+        }
+
+        return resultado;
     }
     
 }
