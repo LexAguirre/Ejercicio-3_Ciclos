@@ -24,7 +24,7 @@ Estos ejercicios se pueden resolver como funciones recibiendo los parámetros ne
 Anexo las series de e en imagen.
 Además resolver la siguiente serie infinita
 
-> S= 4 - (4/3) - (4/5) - (4/7) - (4/9) - (4/11) - (4/13) - (4/15) - (4/17) .....
+> S= 4 + (4/3) - (4/5) + (4/7) - (4/9) + (4/11) - (4/13) + (4/15) - (4/17) .....
 
 En los 2 casos se trata de series infinitas, por lo que ustedes deberían poner un limite en cada una de ellas
 

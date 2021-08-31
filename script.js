@@ -8,9 +8,11 @@ export default class Cycle{
 
     ecuacionS(){
         let s = 4;
+        let signo = 1;
 
         for(let i = 3; i <= this.S; i = i + 2){
-            s = s - this.calculoEcuacionS(i);
+            s = s - this.calculoEcuacionS(i) * signo;
+            signo *= -1;
         }
 
         return (`S = ${s}`);
